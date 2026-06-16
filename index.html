@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Julissa Gonzalez | Makeup Artist</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #2E0F4F;
+      color: white;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #1B0B2E;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h2 {
+      margin: 0;
+      color: #C8A2FF;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #C8A2FF;
+    }
+
+    section {
+      padding: 70px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      background: linear-gradient(135deg, #2E0F4F, #6B3FA0);
+    }
+
+    .hero-photo {
+      width: 45%;
+      min-height: 450px;
+      background: #C8A2FF;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #2E0F4F;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .hero-text {
+      width: 55%;
+    }
+
+    .hero-text h1 {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    .hero-text p {
+      font-size: 22px;
+      line-height: 1.5;
+    }
+
+    .button {
+      display: inline-block;
+      background: #C8A2FF;
+      color: #2E0F4F;
+      padding: 14px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px 10px 0 0;
+    }
+
+    .button:hover {
+      background: white;
+    }
+
+    h2 {
+      font-size: 42px;
+      color: #C8A2FF;
+    }
+
+    .portfolio-row {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+      background: #3A1766;
+      padding: 30px;
+      border-radius: 25px;
+      margin-bottom: 35px;
+    }
+
+    .portfolio-img {
+      width: 40%;
+      min-height: 250px;
+      background: #C8A2FF;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #2E0F4F;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .portfolio-text {
+      width: 60%;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .service-card {
+      background: #3A1766;
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    .socials a {
+      display: inline-block;
+      margin: 10px;
+      padding: 14px 22px;
+      background: #6B3FA0;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    form {
+      background: #3A1766;
+      padding: 30px;
+      border-radius: 25px;
+      max-width: 650px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 18px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    textarea {
+      min-height: 150px;
+    }
+
+    button {
+      background: #C8A2FF;
+      color: #2E0F4F;
+      padding: 14px 25px;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #1B0B2E;
+      color: #C8A2FF;
+    }
+
+    @media (max-width: 800px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        margin-top: 15px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px;
+      }
+
+      .hero,
+      .portfolio-row {
+        flex-direction: column;
+      }
+
+      .hero-photo,
+      .hero-text,
+      .portfolio-img,
+      .portfolio-text {
+        width: 100%;
+      }
+
+      .hero-text h1 {
+        font-size: 42px;
+      }
+
+      .services {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>Julissa Gonzalez</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#services">Services</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-photo">
+    Add Main Photo Here
+  </div>
+
+  <div class="hero-text">
+    <h1>Julissa Gonzalez</h1>
+    <p>Makeup Artist specializing in Beauty, SFX, and Editorial Makeup.</p>
+    <p>Creating bold, beautiful, and unforgettable looks for photoshoots, events, productions, and personal moments.</p>
+    <a href="#portfolio" class="button">View Portfolio</a>
+    <a href="#contact" class="button">DM Me About Services</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Hi, I’m Julissa Gonzalez, a makeup artist passionate about beauty, creativity, and transformation.
+    My work includes beauty makeup, special effects makeup, and editorial looks designed for events,
+    photoshoots, creative projects, and professional opportunities.
+  </p>
+</section>
+
+<section id="portfolio">
+  <h2>Portfolio</h2>
+
+  <div class="portfolio-row">
+    <div class="portfolio-img">Beauty Makeup Photo</div>
+    <div class="portfolio-text">
+      <h3>Beauty Makeup</h3>
+      <p>Soft glam, full glam, bridal, event makeup, and everyday beauty looks.</p>
+      <a href="beauty.html" class="button">See More</a>
+    </div>
+  </div>
+
+  <div class="portfolio-row">
+    <div class="portfolio-img">SFX Makeup Photo</div>
+    <div class="portfolio-text">
+      <h3>SFX Makeup</h3>
+      <p>Creative effects, horror looks, wounds, fantasy makeup, and character transformations.</p>
+      <a href="sfx.html" class="button">See More</a>
+    </div>
+  </div>
+
+  <div class="portfolio-row">
+    <div class="portfolio-img">Editorial Makeup Photo</div>
+    <div class="portfolio-text">
+      <h3>Editorial Makeup</h3>
+      <p>Fashion, photoshoots, creative concepts, runway-inspired looks, and artistic makeup.</p>
+      <a href="editorial.html" class="button">See More</a>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+
+  <div class="services">
+    <div class="service-card">
+      <h3>Beauty Makeup</h3>
+      <p>Events, birthdays, photoshoots, soft glam, full glam, and bridal-inspired looks.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>SFX Makeup</h3>
+      <p>Halloween, film, horror, fantasy, wounds, and creative transformations.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Editorial Makeup</h3>
+      <p>Fashion shoots, creative campaigns, content creation, and artistic projects.</p>
+    </div>
+  </div>
+</section>
+
+<section id="socials">
+  <h2>Socials</h2>
+  <p>Follow my work and connect with me online.</p>
+
+  <div class="socials">
+    <a href="#">Instagram</a>
+    <a href="#">TikTok</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Linktree</a>
+  </div>
+</section>
+
+<section id="resume">
+  <h2>Resume</h2>
+  <p>Interested in hiring me for makeup work, creative projects, photoshoots, or productions?</p>
+  <a href="resume.pdf" class="button">Download Resume</a>
+  <a href="#contact" class="button">Contact Me</a>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>DM me about services, bookings, collaborations, or professional opportunities.</p>
+
+  <form action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <textarea name="message" placeholder="Tell me what service you are interested in..." required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Julissa Gonzalez | Makeup Artist</p>
+</footer>
+
+</body>
+</html>

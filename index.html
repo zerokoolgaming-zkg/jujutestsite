@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,72 +8,17 @@
   <title>Julissa Gonzalez | Makeup Artist</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+      border-radius: 0 !important;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #2E0F4F;
       color: white;
     }
-
-    /* ==========================
-MODERN EDITORIAL STYLE
-NO ROUNDED CORNERS
-========================== */
-
-* {
-  box-sizing: border-box;
-  border-radius: 0 !important;
-  }
-
-.hero-photo,
-.portfolio-row,
-.portfolio-img,
-.service-card,
-form,
-input,
-textarea {
-border: 1px solid #C8A2FF;
-}
-
-.button,
-button,
-.socials a {
-border: 1px solid #C8A2FF;
-}
-
-.hero-photo {
-width: 45%;
-min-height: 550px;
-overflow: hidden;
-background: #C8A2FF;
-}
-
-.hero-photo img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-display: block;
-}
-
-.portfolio-row {
-background: #24113f;
-padding: 40px;
-}
-
-.service-card {
-background: #24113f;
-}
-
-form {
-background: #24113f;
-}
-
-.button:hover,
-button:hover,
-.socials a:hover {
-background: white;
-color: #2E0F4F;
-}
 
     header {
       position: sticky;
@@ -113,13 +59,15 @@ color: #2E0F4F;
       align-items: center;
       gap: 50px;
       background: linear-gradient(135deg, #2E0F4F, #6B3FA0);
+      max-width: none;
     }
 
     .hero-photo {
       width: 45%;
-      min-height: 450px;
+      min-height: 550px;
       background: #C8A2FF;
-      border-radius: 0px;
+      border: 1px solid #C8A2FF;
+      overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -127,6 +75,14 @@ color: #2E0F4F;
       font-size: 24px;
       font-weight: bold;
       text-align: center;
+    }
+
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      min-height: 550px;
+      object-fit: cover;
+      display: block;
     }
 
     .hero-text {
@@ -148,14 +104,15 @@ color: #2E0F4F;
       background: #C8A2FF;
       color: #2E0F4F;
       padding: 14px 24px;
-      border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
       margin: 10px 10px 0 0;
+      border: 1px solid #C8A2FF;
     }
 
     .button:hover {
       background: white;
+      color: #2E0F4F;
     }
 
     h2 {
@@ -167,17 +124,17 @@ color: #2E0F4F;
       display: flex;
       align-items: center;
       gap: 35px;
-      background: #3A1766;
-      padding: 30px;
-      border-radius: 25px;
+      background: #24113f;
+      padding: 40px;
       margin-bottom: 35px;
+      border: 1px solid #C8A2FF;
     }
 
     .portfolio-img {
       width: 40%;
       min-height: 250px;
       background: #C8A2FF;
-      border-radius: 0px;
+      border: 1px solid #C8A2FF;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -197,9 +154,9 @@ color: #2E0F4F;
     }
 
     .service-card {
-      background: #3A1766;
+      background: #24113f;
       padding: 30px;
-      border-radius: 20px;
+      border: 1px solid #C8A2FF;
     }
 
     .socials a {
@@ -208,24 +165,28 @@ color: #2E0F4F;
       padding: 14px 22px;
       background: #6B3FA0;
       color: white;
-      border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
+      border: 1px solid #C8A2FF;
+    }
+
+    .socials a:hover {
+      background: white;
+      color: #2E0F4F;
     }
 
     form {
-      background: #3A1766;
+      background: #24113f;
       padding: 30px;
-      border-radius: 0px;
       max-width: 650px;
+      border: 1px solid #C8A2FF;
     }
 
     input, textarea {
       width: 100%;
       padding: 14px;
       margin-bottom: 18px;
-      border: none;
-      border-radius: 0px;
+      border: 1px solid #C8A2FF;
       font-size: 16px;
     }
 
@@ -237,11 +198,15 @@ color: #2E0F4F;
       background: #C8A2FF;
       color: #2E0F4F;
       padding: 14px 25px;
-      border: none;
-      border-radius: 0px;
+      border: 1px solid #C8A2FF;
       font-weight: bold;
       font-size: 16px;
       cursor: pointer;
+    }
+
+    button:hover {
+      background: white;
+      color: #2E0F4F;
     }
 
     footer {
@@ -254,6 +219,8 @@ color: #2E0F4F;
     @media (max-width: 800px) {
       header {
         flex-direction: column;
+        text-align: center;
+        padding: 15px 20px;
       }
 
       nav {
@@ -263,6 +230,11 @@ color: #2E0F4F;
       nav a {
         display: inline-block;
         margin: 8px;
+        font-size: 14px;
+      }
+
+      section {
+        padding: 45px 20px;
       }
 
       .hero,
@@ -277,37 +249,34 @@ color: #2E0F4F;
         width: 100%;
       }
 
+      .hero-photo,
+      .hero-photo img {
+        min-height: 320px;
+      }
+
+      .hero-text {
+        text-align: center;
+      }
+
       .hero-text h1 {
         font-size: 42px;
+      }
+
+      .hero-text p {
+        font-size: 18px;
       }
 
       .services {
         grid-template-columns: 1fr;
       }
+
+      .button {
+        display: block;
+        margin: 12px auto;
+        max-width: 260px;
+        text-align: center;
+      }
     }
-    /* MODERN EDITORIAL STYLE */
-
-* {
-    border-radius: 0 !important;
-}
-
-.hero-photo,
-.portfolio-row,
-.service-card,
-form {
-    border: 1px solid #C8A2FF;
-}
-
-.button,
-button {
-    border: 1px solid #C8A2FF;
-}
-
-.button:hover,
-button:hover {
-    background: white;
-    color: #2E0F4F;
-}
   </style>
 </head>
 
@@ -325,9 +294,10 @@ button:hover {
   </nav>
 </header>
 
-<div class="hero-photo">
-  <img src="621440936_1878584403021187_8702354644936940622_n.jpg" alt="Julissa Gonzalez" style="width:100%; height:100%; object-fit:cover; border-radius:30px;">
-</div>
+<section class="hero" id="home">
+  <div class="hero-photo">
+    <img src="621440936_1878584403021187_8702354644936940622_n.jpg" alt="Julissa Gonzalez">
+  </div>
 
   <div class="hero-text">
     <h1>Julissa Gonzalez</h1>
@@ -439,3 +409,4 @@ button:hover {
 
 </body>
 </html>
+```
